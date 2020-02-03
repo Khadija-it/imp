@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Announcament;
+use App\finalReport;
 
-class AnnouncamentsController extends Controller
+class finalReportController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class AnnouncamentsController extends Controller
      */
     public function index()
     {
-        return view('Announcaments.index');
-        
+        return view ('finalreports.index');
     }
 
     /**
@@ -25,7 +24,7 @@ class AnnouncamentsController extends Controller
      */
     public function create()
     {
-        return view('Announcaments.create');
+        return view('finalreports.create');
     }
 
     /**
@@ -38,11 +37,15 @@ class AnnouncamentsController extends Controller
     {
         $request->validate([
 
-             "name"=>"required|unique:announcaments"
- ]);
-        Announcament::create($request->all());
-
-        return view('welcome');
+            "file"=>"required" ]);
+        
+       // dd($request->file->store('files','public'));
+       $requestData = $request->all();
+       $requestData['file']=$fileinfo;
+        finalReport::create([
+            'file'=>$request->file->store('files','public')
+        ]);
+        
     }
 
     /**
@@ -53,7 +56,7 @@ class AnnouncamentsController extends Controller
      */
     public function show($id)
     {
-        //
+        return view ('finalreports.show')->with('finalReports',finalReport::all());
     }
 
     /**
@@ -89,4 +92,6 @@ class AnnouncamentsController extends Controller
     {
         //
     }
+
+    
 }

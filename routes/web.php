@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('/Announcaments','AnnouncamentsController');
+Route::resource('/finalreports','finalReportController');
+
 
 Auth::routes();
 

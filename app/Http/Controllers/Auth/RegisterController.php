@@ -74,11 +74,11 @@ class RegisterController extends Controller
 
 
         $studet = Student::create([
-            's_firstName' =>$data['name'],
-            's_lastName' => "test",
-            's_email' => $data['email'],
-            's_phone' => "0534156987",
-            's_major' => "major1",
+            'firstName' =>$data['name'],
+            'lastName' => "test",
+            'email' => $data['email'],
+            'phone' => "0534156987",
+            'major' => "major1",
             'id_user' =>  $user->id,
         ]);
 
