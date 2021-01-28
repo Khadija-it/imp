@@ -2,6 +2,9 @@
 Project Description
 
 Intern Management Portal (IMP) is a website serving Saudi Electronic University (SEU) students, and it will be available for university graduates by streamlining the process of summer training opportunities offered by companies. It enables university students to find a proper internship based on their skills and at the same time allows companies to post their available vacancy for internship through the website. It provides a user-friendly interface for all users and facilitates interaction between students and their supervisors.
+
+
+
 Business Goals
 ● Manage the training life cycle among the students, the company, and the
 university electronically.
