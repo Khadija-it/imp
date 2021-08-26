@@ -21,7 +21,7 @@ table.dataTable thead .sorting_desc_disabled:before {
   bottom: .5em;
 }</style>
 </head>
-            
+   <!-- PAGE FOR PRESNT ALL AVALIBAL JOP-->
 <div class="container pt-5">
 <div class="jumbotorn">
 <div class="card">
@@ -63,26 +63,7 @@ table.dataTable thead .sorting_desc_disabled:before {
       </form> 
       </td>
     </tr>
-   <!-- <tr>
-      <th scope="row">{{ $annouancment->title}}</th>                                           
-      <td>{{ $annouancment->description}}</td>
-      <td>{{ $annouancment->city}}</td>
-      <td>{{ $annouancment->A_start}}</td>
-      <td>{{ $annouancment->A_end}}</td>
-      <td>
-      <button class="btn btn-primary top-bar px-3">APPLY </button>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">{{ $annouancment->title}}</th>
-      <td>{{ $annouancment->description}}</td>
-      <td>{{ $annouancment->city}}</td>
-      <td>{{ $annouancment->A_start}}</td>
-      <td>{{ $annouancment->A_end}}</td>
-      <td>
-      <button class="btn btn-primary top-bar px-3">APPLY </button>
-      </td>
-    </tr>-->
+
         @endforeach
 
   </tbody>
