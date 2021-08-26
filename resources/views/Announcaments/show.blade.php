@@ -27,16 +27,11 @@ table.dataTable thead .sorting_desc_disabled:before {
   <h5 class="card-header pl-3 text-white">Requests</h5>
 
   <div class="card-body"></div>
-
-  
     <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-
     <thead>
- 
     <tr>
     <th scope="col">Student info</th>
       <th scope="col">action</th>
-     
     </tr>
   </thead>
     <tbody>
@@ -63,15 +58,11 @@ table.dataTable thead .sorting_desc_disabled:before {
       <h5> courses</h5>
       <p>{{ $apply->student->cv->courses }}</p>
       <td>
-      
       <form action="{{ route('record.store') }}" class="container" method="POST" >
        @csrf
   <input type="hidden" value="{{$apply->student->id}}" name="student_id"/>
       <input type="hidden" value="{{ $annu->id }}" name="announ_id"/>
-
-    <br/> 
-  
-    
+    <br/>   
  <h5>Applay status</h5>
 <div class="form-check">
   <input class="form-check-input" type="radio" name="massege" id="exampleRadios1" value="approval" checked>
@@ -93,46 +84,12 @@ table.dataTable thead .sorting_desc_disabled:before {
       
       </div>
            <button type="submit" class="btn btn-primary top-bar px-3">submit </button>
-           
-           
      </td>
 
      </form>
-    
-
-      
     </tr>
-  
- 
- 
-
-
-
-<!--
-    <tr>
-    
-   
-      
-      
-      
-      <td>{{ $apply->student->cv->date }}</td>
-      <td>{{ $apply->student->cv->nationality }}</td>
-
-      <td>{{ $apply->student->cv->formal }}</td>
-      <td>{{ $apply->student->cv->courses }}</td>
-      <td>{{ $apply->student->cv->skills }}</td>
-      <td>      <button type="submit" class="btn btn-primary top-bar px-3">approval </button>
-      <button type="submit" class="btn btn-primary top-bar px-3">reject </button>
-</td>
-
-      <td> -->
-   
         @endforeach
         @endforeach
-
-
-
-
   </tbody>
 </table>
 </div>
