@@ -15,18 +15,12 @@
 
 <style>
 /*@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');*/
-
-
 .container{
     border:  dot orange;
-    
-   
 }
 body{
-
 background-image: url("/images/in.jpg");
 height:50px;
-
 }
 .btn-primary{
   background-color: #193870; /* Dark blue */ 
@@ -42,7 +36,7 @@ height:50px;
 </style>
 </head>
 <body>
-
+   <!-- PAGE TO INSERT NEW ANNOUNCEMENT FROM COMPANY -->
 <div class="container pt-5">
 <div class="jumbotorn">
 <div class="card">
