@@ -27,10 +27,7 @@ table.dataTable thead .sorting_desc_disabled:before {
 <div class="card">
   <h5 class="card-header pl-3 text-white">Available job</h5>
   <div class="card-body">
-    
-    
     <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-    
   <thead>
     <tr>
     <th scope="col">name</th>
@@ -44,11 +41,8 @@ table.dataTable thead .sorting_desc_disabled:before {
   </thead>
   <tbody>
   @foreach ($announcaments as $annouancment)
-
     <tr>
-    
     <th scope="row"><a href="/profiles/{{$annouancment->Company_id}}">{{$annouancment->Company['name']}}  </a></th>
-    
       <th scope="row"><p>{{ $annouancment->title }}  </p></th>
       <td>{{ $annouancment->description}} </td>
       <td>{{ $annouancment->city}}</td>
@@ -63,17 +57,13 @@ table.dataTable thead .sorting_desc_disabled:before {
       </form> 
       </td>
     </tr>
-
         @endforeach
-
   </tbody>
 </table>
 <p></p>
     </div>
-    </div>
-    
+    </div>  
   </div>
-  
 </div>
 <script>
 // Basic example
