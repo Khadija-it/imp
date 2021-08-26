@@ -15,52 +15,26 @@ class AnnouncamentsController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return view('Announcaments.index')->with('announcaments',Announcament::all());
-
-        
-       
+        return view('Announcaments.index')->with('announcaments',Announcament::all());   
     }
-
     /**
      * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
      */
     public function create()
     {
         return view('Announcaments.create');
     }
-
     /**
      * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
      */
     public function store(announcamentsRequest $request)
     {
-    
-
-
-        Announcament::create($request->all());
-       
-
-        return redirect( route('home'))->with('success', 'Post created Successfully!');
-
-        
+            Announcament::create($request->all());
+               return redirect( route('home'))->with('success', 'Post created Successfully!');    
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
         return view('request')->with('announcaments',Announcament::all());
@@ -69,9 +43,6 @@ class AnnouncamentsController extends Controller
    
     /**
      * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
